@@ -212,10 +212,24 @@ export function Footer() {
               © {year} {site.name} · {site.address.island},{" "}
               {site.address.country}
             </p>
-            <p className="flex items-center gap-2">
-              <CalendarHeart className="h-4 w-4 text-sunshine" />
-              Toes in the sand. Good times by the sea.
-            </p>
+            <div className="flex flex-col items-center gap-3 sm:flex-row">
+              <p className="flex items-center gap-2">
+                <CalendarHeart className="h-4 w-4 text-sunshine" />
+                Toes in the sand. Good times by the sea.
+              </p>
+              <span className="hidden text-cream/20 sm:inline">·</span>
+              <p>
+                Designed & developed by{" "}
+                <a
+                  href="https://infycrestsolutions.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-cream/70 transition-colors hover:text-sunshine"
+                >
+                  Infycrest Solutions
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
